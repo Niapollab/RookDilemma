@@ -1,4 +1,6 @@
-﻿namespace Voronova
+﻿using Voronova.Models;
+
+namespace Voronova.Controllers
 {
     public class StartEndController
     {

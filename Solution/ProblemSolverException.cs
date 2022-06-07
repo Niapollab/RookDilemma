@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Voronova
+namespace Voronova.Solution
 {
     public class ProblemSolverException : Exception
     {

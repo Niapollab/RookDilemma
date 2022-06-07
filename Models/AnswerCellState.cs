@@ -1,4 +1,4 @@
-﻿namespace Voronova
+﻿namespace Voronova.Models
 {
     public enum AnswerCellState
     {

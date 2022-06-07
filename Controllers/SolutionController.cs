@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Voronova.Models;
+using Voronova.Solution;
 
-namespace Voronova
+namespace Voronova.Controllers
 {
     public class SolutionController
     {

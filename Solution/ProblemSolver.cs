@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Voronova.Models;
 
-namespace Voronova
+namespace Voronova.Solution
 {
     public static class ProblemSolver
     {
