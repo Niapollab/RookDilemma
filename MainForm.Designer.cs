@@ -93,6 +93,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rookColorLabel = new System.Windows.Forms.Label();
+            this.whiteRookColorRadioButton = new System.Windows.Forms.RadioButton();
+            this.blackRookColorRadioButton = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
@@ -935,12 +938,49 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
             // 
+            // rookColorLabel
+            // 
+            this.rookColorLabel.AutoSize = true;
+            this.rookColorLabel.Location = new System.Drawing.Point(15, 538);
+            this.rookColorLabel.Name = "rookColorLabel";
+            this.rookColorLabel.Size = new System.Drawing.Size(71, 15);
+            this.rookColorLabel.TabIndex = 1;
+            this.rookColorLabel.Text = "Цвет ладьи:";
+            // 
+            // whiteRookColorRadioButton
+            // 
+            this.whiteRookColorRadioButton.AutoSize = true;
+            this.whiteRookColorRadioButton.Checked = true;
+            this.whiteRookColorRadioButton.Location = new System.Drawing.Point(93, 538);
+            this.whiteRookColorRadioButton.Name = "whiteRookColorRadioButton";
+            this.whiteRookColorRadioButton.Size = new System.Drawing.Size(61, 19);
+            this.whiteRookColorRadioButton.TabIndex = 2;
+            this.whiteRookColorRadioButton.TabStop = true;
+            this.whiteRookColorRadioButton.Text = "Белый";
+            this.whiteRookColorRadioButton.UseVisualStyleBackColor = true;
+            this.whiteRookColorRadioButton.CheckedChanged += new System.EventHandler(this.RookColorChanged);
+            // 
+            // blackRookColorRadioButton
+            // 
+            this.blackRookColorRadioButton.AutoSize = true;
+            this.blackRookColorRadioButton.Location = new System.Drawing.Point(160, 538);
+            this.blackRookColorRadioButton.Name = "blackRookColorRadioButton";
+            this.blackRookColorRadioButton.Size = new System.Drawing.Size(69, 19);
+            this.blackRookColorRadioButton.TabIndex = 3;
+            this.blackRookColorRadioButton.Text = "Черный";
+            this.blackRookColorRadioButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 584);
+            this.ClientSize = new System.Drawing.Size(544, 584);
+            this.Controls.Add(this.blackRookColorRadioButton);
+            this.Controls.Add(this.whiteRookColorRadioButton);
+            this.Controls.Add(this.rookColorLabel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
@@ -1009,6 +1049,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1079,6 +1120,9 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label rookColorLabel;
+        private System.Windows.Forms.RadioButton whiteRookColorRadioButton;
+        private System.Windows.Forms.RadioButton blackRookColorRadioButton;
     }
 
 }

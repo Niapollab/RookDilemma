@@ -13,7 +13,7 @@ namespace Voronova
         {
             InitializeComponent();
             _board = InitializeBoard();
-            _startEndController = new StartEndController(RookColor.Black);
+            _startEndController = new StartEndController(whiteRookColorRadioButton.Checked ? RookColor.White : RookColor.Black);
         }
 
         private Cell[,] InitializeBoard()
@@ -130,6 +130,11 @@ namespace Voronova
                     }
                     break;
             }
+        }
+
+        private void RookColorChanged(object sender, System.EventArgs e)
+        {
+            _startEndController.RookColor = whiteRookColorRadioButton.Checked ? RookColor.White : RookColor.Black;
         }
     }
 }
