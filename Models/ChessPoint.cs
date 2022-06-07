@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Voronova.Models
+namespace RookDilemma.Models
 {
     public struct ChessPoint : IEquatable<ChessPoint>
     {

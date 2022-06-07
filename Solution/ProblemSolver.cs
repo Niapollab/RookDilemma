@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Voronova.Models;
+using RookDilemma.Models;
 
-namespace Voronova.Solution
+namespace RookDilemma.Solution
 {
     public static class ProblemSolver
     {

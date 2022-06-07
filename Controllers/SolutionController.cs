@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Voronova.Models;
-using Voronova.Solution;
+using RookDilemma.Models;
+using RookDilemma.Solution;
 
-namespace Voronova.Controllers
+namespace RookDilemma.Controllers
 {
     public class SolutionController
     {
@@ -39,7 +39,7 @@ namespace Voronova.Controllers
         private ProblemMapEntry[,] BuildProblemMap()
         {
             var map = new ProblemMapEntry[_board.GetLength(0), _board.GetLength(1)];
-            
+
             for (var i = 0; i < _board.GetLength(0); ++i)
                 for (var j = 0; j < _board.GetLength(1); ++j)
                     switch (_board[i, j].State)

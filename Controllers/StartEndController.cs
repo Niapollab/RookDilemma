@@ -1,6 +1,6 @@
-﻿using Voronova.Models;
+﻿using RookDilemma.Models;
 
-namespace Voronova.Controllers
+namespace RookDilemma.Controllers
 {
     public class StartEndController
     {

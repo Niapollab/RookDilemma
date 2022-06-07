@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Voronova.Models
+namespace RookDilemma.Models
 {
     public class Cell
     {

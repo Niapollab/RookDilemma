@@ -1,9 +1,9 @@
 using System;
 using System.Windows.Forms;
-using Voronova.Controllers;
-using Voronova.Models;
+using RookDilemma.Controllers;
+using RookDilemma.Models;
 
-namespace Voronova
+namespace RookDilemma
 {
     public partial class MainForm : Form
     {

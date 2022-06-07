@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Voronova.Solution
+namespace RookDilemma.Solution
 {
     public class ProblemSolverException : Exception
     {
