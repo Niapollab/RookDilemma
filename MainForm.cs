@@ -1,4 +1,4 @@
-using System.Drawing;
+using System;
 using System.Windows.Forms;
 
 namespace Voronova
@@ -105,7 +105,7 @@ namespace Voronova
 
         private void CellMouseDowned(object sender, MouseEventArgs e)
         {
-            var cell = Cell.Find(_board, sender as PictureBox);
+            var cell = Cell.FindCell(_board, sender as PictureBox);
             switch (e.Button)
             {
                 case MouseButtons.Left:
@@ -132,9 +132,17 @@ namespace Voronova
             }
         }
 
-        private void RookColorChanged(object sender, System.EventArgs e)
+        private void RookColorChanged(object sender, EventArgs e)
         {
             _startEndController.RookColor = whiteRookColorRadioButton.Checked ? RookColor.White : RookColor.Black;
+        }
+
+        private void CellMouseEntered(object sender, EventArgs e)
+        {
+            ChessPoint? point = Cell.FindIndex(_board, sender as PictureBox);
+
+            if (point != null)
+                currentCellIndexLabel.Text = point.ToString();
         }
     }
 }

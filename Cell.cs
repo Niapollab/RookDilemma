@@ -77,7 +77,16 @@ namespace Voronova
             _texture = texture ?? throw new ArgumentNullException(nameof(texture));
         }
 
-        public static Cell Find(Cell[,] cells, PictureBox texture)
+        public static Cell FindCell(Cell[,] cells, PictureBox texture)
+        {
+            _ = cells ?? throw new ArgumentNullException(nameof(cells));
+            _ = texture ?? throw new ArgumentNullException(nameof(texture));
+
+            ChessPoint? index = FindIndex(cells, texture);
+            return index != null ? cells[index.Value.Y, index.Value.X] : null;
+        }
+
+        public static ChessPoint? FindIndex(Cell[,] cells, PictureBox texture)
         {
             _ = cells ?? throw new ArgumentNullException(nameof(cells));
             _ = texture ?? throw new ArgumentNullException(nameof(texture));
@@ -85,7 +94,7 @@ namespace Voronova
             for (var i = 0; i < cells.GetLength(0); ++i)
                 for (var j = 0; j < cells.GetLength(1); ++j)
                     if (cells[i, j]._texture == texture)
-                        return cells[i, j];
+                        return new ChessPoint(i, j);
 
             return null;
         }

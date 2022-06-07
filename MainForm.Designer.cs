@@ -96,6 +96,7 @@
             this.rookColorLabel = new System.Windows.Forms.Label();
             this.whiteRookColorRadioButton = new System.Windows.Forms.RadioButton();
             this.blackRookColorRadioButton = new System.Windows.Forms.RadioButton();
+            this.currentCellIndexLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
@@ -244,6 +245,7 @@
             this.pictureBox33.TabIndex = 63;
             this.pictureBox33.TabStop = false;
             this.pictureBox33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox33.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox34
             // 
@@ -255,6 +257,7 @@
             this.pictureBox34.TabIndex = 62;
             this.pictureBox34.TabStop = false;
             this.pictureBox34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox34.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox35
             // 
@@ -266,6 +269,7 @@
             this.pictureBox35.TabIndex = 61;
             this.pictureBox35.TabStop = false;
             this.pictureBox35.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox35.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox36
             // 
@@ -277,6 +281,7 @@
             this.pictureBox36.TabIndex = 60;
             this.pictureBox36.TabStop = false;
             this.pictureBox36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox36.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox37
             // 
@@ -288,6 +293,7 @@
             this.pictureBox37.TabIndex = 59;
             this.pictureBox37.TabStop = false;
             this.pictureBox37.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox37.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox38
             // 
@@ -299,6 +305,7 @@
             this.pictureBox38.TabIndex = 58;
             this.pictureBox38.TabStop = false;
             this.pictureBox38.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox38.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox39
             // 
@@ -310,6 +317,7 @@
             this.pictureBox39.TabIndex = 57;
             this.pictureBox39.TabStop = false;
             this.pictureBox39.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox39.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox40
             // 
@@ -321,6 +329,7 @@
             this.pictureBox40.TabIndex = 56;
             this.pictureBox40.TabStop = false;
             this.pictureBox40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox40.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox41
             // 
@@ -332,6 +341,7 @@
             this.pictureBox41.TabIndex = 55;
             this.pictureBox41.TabStop = false;
             this.pictureBox41.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox41.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox42
             // 
@@ -343,6 +353,7 @@
             this.pictureBox42.TabIndex = 54;
             this.pictureBox42.TabStop = false;
             this.pictureBox42.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox42.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox43
             // 
@@ -354,6 +365,7 @@
             this.pictureBox43.TabIndex = 53;
             this.pictureBox43.TabStop = false;
             this.pictureBox43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox43.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox44
             // 
@@ -365,6 +377,7 @@
             this.pictureBox44.TabIndex = 52;
             this.pictureBox44.TabStop = false;
             this.pictureBox44.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox44.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox45
             // 
@@ -376,6 +389,7 @@
             this.pictureBox45.TabIndex = 51;
             this.pictureBox45.TabStop = false;
             this.pictureBox45.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox45.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox46
             // 
@@ -387,6 +401,7 @@
             this.pictureBox46.TabIndex = 50;
             this.pictureBox46.TabStop = false;
             this.pictureBox46.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox46.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox47
             // 
@@ -398,6 +413,7 @@
             this.pictureBox47.TabIndex = 49;
             this.pictureBox47.TabStop = false;
             this.pictureBox47.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox47.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox48
             // 
@@ -409,6 +425,7 @@
             this.pictureBox48.TabIndex = 48;
             this.pictureBox48.TabStop = false;
             this.pictureBox48.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox48.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox49
             // 
@@ -420,6 +437,7 @@
             this.pictureBox49.TabIndex = 47;
             this.pictureBox49.TabStop = false;
             this.pictureBox49.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox49.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox50
             // 
@@ -431,6 +449,7 @@
             this.pictureBox50.TabIndex = 46;
             this.pictureBox50.TabStop = false;
             this.pictureBox50.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox50.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox51
             // 
@@ -442,6 +461,7 @@
             this.pictureBox51.TabIndex = 45;
             this.pictureBox51.TabStop = false;
             this.pictureBox51.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox51.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox52
             // 
@@ -453,6 +473,7 @@
             this.pictureBox52.TabIndex = 44;
             this.pictureBox52.TabStop = false;
             this.pictureBox52.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox52.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox53
             // 
@@ -464,6 +485,7 @@
             this.pictureBox53.TabIndex = 43;
             this.pictureBox53.TabStop = false;
             this.pictureBox53.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox53.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox54
             // 
@@ -475,6 +497,7 @@
             this.pictureBox54.TabIndex = 42;
             this.pictureBox54.TabStop = false;
             this.pictureBox54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox54.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox55
             // 
@@ -486,6 +509,7 @@
             this.pictureBox55.TabIndex = 41;
             this.pictureBox55.TabStop = false;
             this.pictureBox55.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox55.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox56
             // 
@@ -497,6 +521,7 @@
             this.pictureBox56.TabIndex = 40;
             this.pictureBox56.TabStop = false;
             this.pictureBox56.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox56.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox57
             // 
@@ -508,6 +533,7 @@
             this.pictureBox57.TabIndex = 39;
             this.pictureBox57.TabStop = false;
             this.pictureBox57.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox57.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox58
             // 
@@ -519,6 +545,7 @@
             this.pictureBox58.TabIndex = 38;
             this.pictureBox58.TabStop = false;
             this.pictureBox58.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox58.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox59
             // 
@@ -530,6 +557,7 @@
             this.pictureBox59.TabIndex = 37;
             this.pictureBox59.TabStop = false;
             this.pictureBox59.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox59.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox60
             // 
@@ -541,6 +569,7 @@
             this.pictureBox60.TabIndex = 36;
             this.pictureBox60.TabStop = false;
             this.pictureBox60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox60.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox61
             // 
@@ -552,6 +581,7 @@
             this.pictureBox61.TabIndex = 35;
             this.pictureBox61.TabStop = false;
             this.pictureBox61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox61.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox62
             // 
@@ -563,6 +593,7 @@
             this.pictureBox62.TabIndex = 34;
             this.pictureBox62.TabStop = false;
             this.pictureBox62.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox62.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox63
             // 
@@ -574,6 +605,7 @@
             this.pictureBox63.TabIndex = 33;
             this.pictureBox63.TabStop = false;
             this.pictureBox63.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox63.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox64
             // 
@@ -585,6 +617,7 @@
             this.pictureBox64.TabIndex = 32;
             this.pictureBox64.TabStop = false;
             this.pictureBox64.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox64.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox17
             // 
@@ -596,6 +629,7 @@
             this.pictureBox17.TabIndex = 31;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox17.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox18
             // 
@@ -607,6 +641,7 @@
             this.pictureBox18.TabIndex = 30;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox18.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox19
             // 
@@ -618,6 +653,7 @@
             this.pictureBox19.TabIndex = 29;
             this.pictureBox19.TabStop = false;
             this.pictureBox19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox19.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox20
             // 
@@ -629,6 +665,7 @@
             this.pictureBox20.TabIndex = 28;
             this.pictureBox20.TabStop = false;
             this.pictureBox20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox20.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox21
             // 
@@ -640,6 +677,7 @@
             this.pictureBox21.TabIndex = 27;
             this.pictureBox21.TabStop = false;
             this.pictureBox21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox21.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox22
             // 
@@ -651,6 +689,7 @@
             this.pictureBox22.TabIndex = 26;
             this.pictureBox22.TabStop = false;
             this.pictureBox22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox22.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox23
             // 
@@ -662,6 +701,7 @@
             this.pictureBox23.TabIndex = 25;
             this.pictureBox23.TabStop = false;
             this.pictureBox23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox23.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox24
             // 
@@ -673,6 +713,7 @@
             this.pictureBox24.TabIndex = 24;
             this.pictureBox24.TabStop = false;
             this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox24.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox25
             // 
@@ -684,6 +725,7 @@
             this.pictureBox25.TabIndex = 23;
             this.pictureBox25.TabStop = false;
             this.pictureBox25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox25.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox26
             // 
@@ -695,6 +737,7 @@
             this.pictureBox26.TabIndex = 22;
             this.pictureBox26.TabStop = false;
             this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox26.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox27
             // 
@@ -706,6 +749,7 @@
             this.pictureBox27.TabIndex = 21;
             this.pictureBox27.TabStop = false;
             this.pictureBox27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox27.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox28
             // 
@@ -717,6 +761,7 @@
             this.pictureBox28.TabIndex = 20;
             this.pictureBox28.TabStop = false;
             this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox28.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox29
             // 
@@ -728,6 +773,7 @@
             this.pictureBox29.TabIndex = 19;
             this.pictureBox29.TabStop = false;
             this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox29.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox30
             // 
@@ -739,6 +785,7 @@
             this.pictureBox30.TabIndex = 18;
             this.pictureBox30.TabStop = false;
             this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox30.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox31
             // 
@@ -750,6 +797,7 @@
             this.pictureBox31.TabIndex = 17;
             this.pictureBox31.TabStop = false;
             this.pictureBox31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox31.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox32
             // 
@@ -761,6 +809,7 @@
             this.pictureBox32.TabIndex = 16;
             this.pictureBox32.TabStop = false;
             this.pictureBox32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox32.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox9
             // 
@@ -772,6 +821,7 @@
             this.pictureBox9.TabIndex = 15;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox9.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox10
             // 
@@ -783,6 +833,7 @@
             this.pictureBox10.TabIndex = 14;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox10.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox11
             // 
@@ -794,6 +845,7 @@
             this.pictureBox11.TabIndex = 13;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox11.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox12
             // 
@@ -805,6 +857,7 @@
             this.pictureBox12.TabIndex = 12;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox12.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox13
             // 
@@ -816,6 +869,7 @@
             this.pictureBox13.TabIndex = 11;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox13.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox14
             // 
@@ -827,6 +881,7 @@
             this.pictureBox14.TabIndex = 10;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox14.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox15
             // 
@@ -838,6 +893,7 @@
             this.pictureBox15.TabIndex = 9;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox15.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox16
             // 
@@ -849,6 +905,7 @@
             this.pictureBox16.TabIndex = 8;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox16.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox8
             // 
@@ -860,6 +917,7 @@
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox8.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox7
             // 
@@ -871,6 +929,7 @@
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox7.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox6
             // 
@@ -882,6 +941,7 @@
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox6.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox5
             // 
@@ -893,6 +953,7 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox5.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox4
             // 
@@ -904,6 +965,7 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox4.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox3
             // 
@@ -915,6 +977,7 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox3.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox2
             // 
@@ -926,6 +989,7 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // pictureBox1
             // 
@@ -937,6 +1001,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CellMouseDowned);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.CellMouseEntered);
             // 
             // rookColorLabel
             // 
@@ -967,14 +1032,24 @@
             this.blackRookColorRadioButton.Name = "blackRookColorRadioButton";
             this.blackRookColorRadioButton.Size = new System.Drawing.Size(69, 19);
             this.blackRookColorRadioButton.TabIndex = 3;
-            this.blackRookColorRadioButton.Text = "Черный";
+            this.blackRookColorRadioButton.Text = "Чёрный";
             this.blackRookColorRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // currentCellIndexLabel
+            // 
+            this.currentCellIndexLabel.AutoSize = true;
+            this.currentCellIndexLabel.Location = new System.Drawing.Point(506, 538);
+            this.currentCellIndexLabel.Name = "currentCellIndexLabel";
+            this.currentCellIndexLabel.Size = new System.Drawing.Size(21, 15);
+            this.currentCellIndexLabel.TabIndex = 4;
+            this.currentCellIndexLabel.Text = "A1";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 584);
+            this.ClientSize = new System.Drawing.Size(544, 564);
+            this.Controls.Add(this.currentCellIndexLabel);
             this.Controls.Add(this.blackRookColorRadioButton);
             this.Controls.Add(this.whiteRookColorRadioButton);
             this.Controls.Add(this.rookColorLabel);
@@ -1123,6 +1198,7 @@
         private System.Windows.Forms.Label rookColorLabel;
         private System.Windows.Forms.RadioButton whiteRookColorRadioButton;
         private System.Windows.Forms.RadioButton blackRookColorRadioButton;
+        private System.Windows.Forms.Label currentCellIndexLabel;
     }
 
 }
