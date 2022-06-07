@@ -99,5 +99,10 @@ namespace Voronova
                 },
             };
         }
+
+        private void CellMouseDowned(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
