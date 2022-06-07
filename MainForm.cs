@@ -5,104 +5,131 @@ namespace Voronova
 {
     public partial class MainForm : Form
     {
-        private readonly PictureBox[,] _board;
+        private readonly StartEndController _startEndController;
+
+        private readonly Cell[,] _board;
 
         public MainForm()
         {
             InitializeComponent();
             _board = InitializeBoard();
+            _startEndController = new StartEndController(RookColor.Black);
         }
 
-        private PictureBox[,] InitializeBoard()
+        private Cell[,] InitializeBoard()
         {
-            return new PictureBox[,]
+            return new Cell[,]
             {
                 {
-                    pictureBox40,
-                    pictureBox39,
-                    pictureBox38,
-                    pictureBox37,
-                    pictureBox36,
-                    pictureBox35,
-                    pictureBox34,
-                    pictureBox33
+                    new Cell(pictureBox40),
+                    new Cell(pictureBox39),
+                    new Cell(pictureBox38),
+                    new Cell(pictureBox37),
+                    new Cell(pictureBox36),
+                    new Cell(pictureBox35),
+                    new Cell(pictureBox34),
+                    new Cell(pictureBox33)
                 },
                 {
-                    pictureBox48,
-                    pictureBox47,
-                    pictureBox46,
-                    pictureBox45,
-                    pictureBox44,
-                    pictureBox43,
-                    pictureBox42,
-                    pictureBox41
+                    new Cell(pictureBox48),
+                    new Cell(pictureBox47),
+                    new Cell(pictureBox46),
+                    new Cell(pictureBox45),
+                    new Cell(pictureBox44),
+                    new Cell(pictureBox43),
+                    new Cell(pictureBox42),
+                    new Cell(pictureBox41)
                 },
                 {
-                    pictureBox56,
-                    pictureBox55,
-                    pictureBox54,
-                    pictureBox53,
-                    pictureBox52,
-                    pictureBox51,
-                    pictureBox50,
-                    pictureBox49
+                    new Cell(pictureBox56),
+                    new Cell(pictureBox55),
+                    new Cell(pictureBox54),
+                    new Cell(pictureBox53),
+                    new Cell(pictureBox52),
+                    new Cell(pictureBox51),
+                    new Cell(pictureBox50),
+                    new Cell(pictureBox49)
                 },
                 {
-                    pictureBox64,
-                    pictureBox63,
-                    pictureBox62,
-                    pictureBox61,
-                    pictureBox60,
-                    pictureBox59,
-                    pictureBox58,
-                    pictureBox57
+                    new Cell(pictureBox64),
+                    new Cell(pictureBox63),
+                    new Cell(pictureBox62),
+                    new Cell(pictureBox61),
+                    new Cell(pictureBox60),
+                    new Cell(pictureBox59),
+                    new Cell(pictureBox58),
+                    new Cell(pictureBox57)
                 },
                 {
-                    pictureBox24,
-                    pictureBox23,
-                    pictureBox22,
-                    pictureBox21,
-                    pictureBox20,
-                    pictureBox19,
-                    pictureBox18,
-                    pictureBox17
+                    new Cell(pictureBox24),
+                    new Cell(pictureBox23),
+                    new Cell(pictureBox22),
+                    new Cell(pictureBox21),
+                    new Cell(pictureBox20),
+                    new Cell(pictureBox19),
+                    new Cell(pictureBox18),
+                    new Cell(pictureBox17)
                 },
                 {
-                    pictureBox32,
-                    pictureBox31,
-                    pictureBox30,
-                    pictureBox29,
-                    pictureBox28,
-                    pictureBox27,
-                    pictureBox26,
-                    pictureBox25
+                    new Cell(pictureBox32),
+                    new Cell(pictureBox31),
+                    new Cell(pictureBox30),
+                    new Cell(pictureBox29),
+                    new Cell(pictureBox28),
+                    new Cell(pictureBox27),
+                    new Cell(pictureBox26),
+                    new Cell(pictureBox25)
                 },
                 {
-                    pictureBox16,
-                    pictureBox15,
-                    pictureBox14,
-                    pictureBox13,
-                    pictureBox12,
-                    pictureBox11,
-                    pictureBox10,
-                    pictureBox9
+                    new Cell(pictureBox16),
+                    new Cell(pictureBox15),
+                    new Cell(pictureBox14),
+                    new Cell(pictureBox13),
+                    new Cell(pictureBox12),
+                    new Cell(pictureBox11),
+                    new Cell(pictureBox10),
+                    new Cell(pictureBox9)
                 },
                 {
-                    pictureBox1,
-                    pictureBox2,
-                    pictureBox3,
-                    pictureBox4,
-                    pictureBox5,
-                    pictureBox6,
-                    pictureBox7,
-                    pictureBox8
+                    new Cell(pictureBox1),
+                    new Cell(pictureBox2),
+                    new Cell(pictureBox3),
+                    new Cell(pictureBox4),
+                    new Cell(pictureBox5),
+                    new Cell(pictureBox6),
+                    new Cell(pictureBox7),
+                    new Cell(pictureBox8)
                 },
             };
         }
 
         private void CellMouseDowned(object sender, MouseEventArgs e)
         {
-
+            var cell = Cell.Find(_board, sender as PictureBox);
+            switch (e.Button)
+            {
+                case MouseButtons.Left:
+                    _startEndController.UpdateCell(cell);
+                    break;
+                case MouseButtons.Right:
+                    switch (cell.State)
+                    {
+                        case CellState.WhitePedestrian:
+                            cell.State = CellState.BlackPedestrian;
+                            break;
+                        case CellState.BlackPedestrian:
+                            cell.State = CellState.Empty;
+                            break;
+                        case CellState.BlackRock:
+                        case CellState.WhiteRock:
+                        case CellState.EndPoint:
+                            break;
+                        default:
+                            cell.State = CellState.WhitePedestrian;
+                            break;
+                    }
+                    break;
+            }
         }
     }
 }
