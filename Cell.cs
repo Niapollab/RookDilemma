@@ -6,7 +6,38 @@ namespace Voronova
 {
     public class Cell
     {
+        private static readonly Color WhiteCellColor = Color.FromArgb(234, 183, 126);
+
+        private static readonly Color BlackCellColor = Color.FromArgb(193, 85, 13);
+
+        private static readonly Color WhitePathCellColor = Color.FromArgb(129, 123, 236);
+
+        private static readonly Color BlackPathCellColor = Color.FromArgb(21, 31, 205);
+
         private readonly PictureBox _texture;
+
+        private AnswerCellState _answerCellState;
+
+        public AnswerCellState AnswerCellState
+        {
+            get => _answerCellState;
+            set
+            {
+                if (_answerCellState == value)
+                    return;
+
+                switch (value)
+                {
+                    case AnswerCellState.NotIncludeCell:
+                        _texture.BackColor = _texture.BackColor == WhitePathCellColor ? WhiteCellColor : BlackCellColor;
+                        break;
+                    case AnswerCellState.IncludeCell:
+                        _texture.BackColor = _texture.BackColor == WhiteCellColor ? WhitePathCellColor : BlackPathCellColor;
+                        break;
+                }
+                _answerCellState = value;
+            }
+        }
 
         private CellState _state;
 
