@@ -22,6 +22,8 @@
             }
         }
 
+        public bool AnswerCanBeBuilded => _state == 2;
+
         public StartEndController(RookColor rookColor)
         {
             _state = 0;

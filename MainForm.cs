@@ -7,6 +7,8 @@ namespace Voronova
     {
         private readonly StartEndController _startEndController;
 
+        private readonly SolutionController _solutionController;
+
         private readonly Cell[,] _board;
 
         public MainForm()
@@ -14,6 +16,7 @@ namespace Voronova
             InitializeComponent();
             _board = InitializeBoard();
             _startEndController = new StartEndController(whiteRookColorRadioButton.Checked ? RookColor.White : RookColor.Black);
+            _solutionController = new SolutionController(_startEndController, _board);
         }
 
         private Cell[,] InitializeBoard()
@@ -130,11 +133,13 @@ namespace Voronova
                     }
                     break;
             }
+            _solutionController.UpdateSolution();
         }
 
         private void RookColorChanged(object sender, EventArgs e)
         {
             _startEndController.RookColor = whiteRookColorRadioButton.Checked ? RookColor.White : RookColor.Black;
+            _solutionController.UpdateSolution();
         }
 
         private void CellMouseEntered(object sender, EventArgs e)
